@@ -1,0 +1,55 @@
+@use 'sass:map';
+@use 'sass:math';
+
+//functions and mixins
+$breakpoints: (
+  mobile: 350px,
+  tablet: 720px,
+  laptop: 1200px,
+  desktop: 1520px,
+);
+
+@mixin media($size) {
+  $breakpoint: map.get($breakpoints, $size);
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-size($breakpoint, $font-size, $line-height, $font-weight: 400) {
+  @include media($breakpoint) {
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+  }
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.rt-footer{
+  .attribution {
+    font-size: 14px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}

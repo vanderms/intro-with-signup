@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.rt-footer .attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.rt-footer .attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22index.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA+BA;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIA;EACE;EACA;;AAEF;EACE%22,%22file%22:%22index.css%22%7D */
