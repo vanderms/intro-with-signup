@@ -28,6 +28,13 @@ html {
     padding-inline: max(6.4%, 50vw - 350px);
   }
 }
+@media screen and (min-width: 1200px) {
+  .rt-section-hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 121px calc(50vw - 550px);
+  }
+}
 .rt-section-hero::before {
   content: "";
   position: absolute;
@@ -46,6 +53,12 @@ html {
   object-fit: cover;
   object-position: center;
 }
+@media screen and (min-width: 1200px) {
+  .rt-section-hero .h1-header {
+    margin-top: 169px;
+    width: 525px;
+  }
+}
 .rt-section-hero .h1-header .h1-title {
   font-weight: 700;
   font-size: 28px;
@@ -53,6 +66,14 @@ html {
   text-align: center;
   letter-spacing: -0.291667px;
   color: #fff;
+}
+@media screen and (min-width: 1200px) {
+  .rt-section-hero .h1-header .h1-title {
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+    text-align: left;
+  }
 }
 .rt-section-hero .h1-header .h1-description {
   margin-top: 16px;
@@ -62,9 +83,21 @@ html {
   text-align: center;
   color: #fff;
 }
+@media screen and (min-width: 1200px) {
+  .rt-section-hero .h1-header .h1-description {
+    text-align: left;
+    margin-top: 32px;
+  }
+}
 
 .rt-section-hero .form-container {
   margin-top: 64px;
+}
+@media screen and (min-width: 1200px) {
+  .rt-section-hero .form-container {
+    margin-top: 0;
+    width: 540px;
+  }
 }
 .rt-section-hero .form-container .h2-title {
   padding: 18px 17.6%;
@@ -90,6 +123,12 @@ html {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .rt-section-hero .form-container .form {
+    padding: 40px;
+    gap: 20px;
+  }
 }
 .rt-section-hero .form-container .form .input-item {
   position: relative;
@@ -148,6 +187,9 @@ html {
   cursor: pointer;
   text-transform: uppercase;
 }
+.rt-section-hero .form-container .form .submit:hover {
+  background-color: #77e2b3;
+}
 .rt-section-hero .form-container .form .terms {
   margin-top: -8px;
   font-weight: 500;
@@ -170,4 +212,4 @@ html {
   color: #3e52a3;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22index.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAgCA;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;;AA1CA;EAsCF;IAOI;;;AAGF;EACE;EACA;EACA;EACA;EACA,kBA3CE;;AA8CJ;EACE;EACA;EACA;;AAEA;EAvDF,OAwDkB;EAvDlB,QAuDwB;EACpB;EACA;;AAKF;EACE;EACA;EACA;EACA;EACA;EACA,OA5DE;;AA+DJ;EACE;EACA;EACA;EACA;EACA;EACA,OArEE;;;AA0ER;EACE;;AAEA;EACE;EACA,kBAlFG;EAmFH;EACA;EACA;EAEA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;EACA,kBAlGI;EAmGJ;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EAtHF,OAuHkB;EAtHlB,QAsHwB;EACpB;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OAlIM;EAmIN;;AAGF;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;;AAGF;EAlKF,OAmKkB;EAlKlB,QAkKwB;EACpB,YA/JE;EAgKF;EACA;EACA;EACA;EACA;EACA;EACA,OAlKE;EAmKF;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA,OA9KS;EA+KT;;AAEA;EACE;EACA,OAvLF;;;AA8LJ;EACE;EACA;;AAEF;EACE%22,%22file%22:%22index.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22index.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAgCA;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;;AA1CA;EAsCF;IAOI;;;AA7CF;EAsCF;IAWI;IACA;IACA;;;AAGF;EACE;EACA;EACA;EACA;EACA,kBAjDE;;AAoDJ;EACE;EACA;EACA;;AAEA;EA7DF,OA8DkB;EA7DlB,QA6DwB;EACpB;EACA;;AAtEJ;EA0EA;IAEI;IACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA,OAvEE;;AAfN;EAgFE;IASI;IACA;IACA;IACA;;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA,OAvFE;;AAfN;EAgGE;IASI;IACA;;;;AAMR;EACE;;AAjHA;EAgHF;IAII;IACA;;;AAGF;EACE;EACA,kBA9GG;EA+GH;EACA;EACA;EAEA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;EACA,kBA9HI;EA+HJ;EACA;EACA;EACA;EACA;;AAlJF;EA0IA;IAWI;IACA;;;AAGF;EACE;;AAGF;EAvJF,OAwJkB;EAvJlB,QAuJwB;EACpB;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OAnKM;EAoKN;;AAGF;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;;AAGF;EAnMF,OAoMkB;EAnMlB,QAmMwB;EACpB,YAhME;EAiMF;EACA;EACA;EACA;EACA;EACA;EACA,OAnME;EAoMF;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA,OAnNS;EAoNT;;AAEA;EACE;EACA,OA5NF;;;AAmOJ;EACE;EACA;;AAEF;EACE%22,%22file%22:%22index.css%22%7D */

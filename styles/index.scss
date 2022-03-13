@@ -55,8 +55,14 @@ html {
   flex-direction: column;
   padding: 88px math.percentage(24 / 375) 68px;
 
-  @include media(tablet){
-    padding-inline: Max(math.percentage(24 / 375), 50vw - 350px);    
+  @include media(tablet) {
+    padding-inline: Max(math.percentage(24 / 375), 50vw - 350px);
+  }
+
+  @include media(laptop) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 121px calc(50vw - 550px);
   }
 
   &::before {
@@ -80,6 +86,11 @@ html {
   }
 
   .h1-header {
+    @include media(laptop) {
+      margin-top: 169px;
+      width: 525px;
+    }
+
     .h1-title {
       font-weight: 700;
       font-size: 28px;
@@ -87,6 +98,13 @@ html {
       text-align: center;
       letter-spacing: -0.291667px;
       color: $white;
+
+      @include media(laptop) {
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: -0.520833px;
+        text-align: left;
+      }
     }
 
     .h1-description {
@@ -96,12 +114,22 @@ html {
       line-height: 26px;
       text-align: center;
       color: $white;
+
+      @include media(laptop) {
+        text-align: left;
+        margin-top: 32px;
+      }
     }
   }
 }
 
 .rt-section-hero .form-container {
   margin-top: 64px;
+
+  @include media(laptop) {
+    margin-top: 0;
+    width: 540px;
+  }
 
   .h2-title {
     padding: 18px math.percentage(66/375);
@@ -130,6 +158,11 @@ html {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @include media(laptop) {
+      padding: 40px;
+      gap: 20px;
+    }
 
     .input-item {
       position: relative;
@@ -191,6 +224,10 @@ html {
       color: $white;
       cursor: pointer;
       text-transform: uppercase;
+
+      &:hover {
+        background-color: #77e2b3;
+      }
     }
 
     .terms {
