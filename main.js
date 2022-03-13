@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
 
   let valid = true;
 
-  form.querySelectorAll('.input').entries.forEach((input) => {
+  form.querySelectorAll('.input').forEach((input) => {
     if (!input.checkValidity()) {
       valid = false;
       let message = input.value ? input.dataset.invalid : input.dataset.empty;
