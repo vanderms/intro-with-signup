@@ -21,13 +21,14 @@ $breakpoints: (
   height: $height;
 }
 
-@mixin font-size($breakpoint, $font-size, $line-height, $font-weight: 400) {
-  @include media($breakpoint) {
-    font-size: $font-size;
-    line-height: $line-height;
-    font-weight: $font-weight;
-  }
-}
+$red: hsl(0, 100%, 74%);
+$green: hsl(154, 59%, 51%);
+$blue: hsl(248, 32%, 49%);
+$dark-blue: hsl(249, 10%, 26%);
+$grayish-blue: hsl(246, 25%, 77%);
+$white: #fff;
+
+$poppins: 'Poppins', sans-serif;
 
 *,
 *::after,
@@ -38,13 +39,174 @@ $breakpoints: (
   text-decoration: none;
   list-style-type: none;
   color: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
   font-family: 'Poppins', sans-serif;
 }
 
-.rt-footer{
+html {
+  font-size: 16px;
+}
+
+.rt-section-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 88px math.percentage(24 / 375) 68px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: -2;
+    background-color: $red;
+  }
+
+  .background {
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: -1;
+
+    .image {
+      @include size(100%, 100%);
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .h1-header {
+    .h1-title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: -0.291667px;
+      color: $white;
+    }
+
+    .h1-description {
+      margin-top: 16px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: $white;
+    }
+  }
+}
+
+.rt-section-hero .form-container {
+  margin-top: 64px;
+
+  .h2-title {
+    padding: 18px math.percentage(66/375);
+    background-color: $blue;
+    color: white;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.267857px;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  .form {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: $white;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .input-item {
+      position: relative;
+    }
+
+    .input {
+      @include size(100%, 56px);
+      border: 1px solid #dedede;
+      border-radius: 5px;
+      padding-inline: 19px;
+    }
+
+    .label {
+      position: absolute;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      top: 0px;
+      left: -100vw;
+      padding-left: 19px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 0.25px;
+      color: $dark-blue;
+      width: 100%;
+    }
+
+    .icon-error {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+
+    .error-message {
+      margin-top: 6px;
+      font-family: 'Poppins';
+      font-style: italic;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      text-align: right;
+      color: #ff7979;
+    }
+
+    .input:placeholder-shown + .label {
+      left: 0px;
+    }
+
+    .submit {
+      @include size(100%, 56px);
+      background: $green;
+      box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 26px;
+      letter-spacing: 1px;
+      color: $white;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .terms {
+      margin-top: -8px;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 21px;
+      text-align: center;
+      color: $grayish-blue;
+      width: math.percentage(249 / 279);
+
+      a {
+        font-weight: 700;
+        color: $red;
+      }
+    }
+  }
+}
+
+.rt-footer {
   .attribution {
     font-size: 14px;
     text-align: center;

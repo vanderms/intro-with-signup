@@ -7,10 +7,154 @@
   text-decoration: none;
   list-style-type: none;
   color: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+.rt-section-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 88px 6.4% 68px;
+}
+.rt-section-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: -2;
+  background-color: #ff7a7a;
+}
+.rt-section-hero .background {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: -1;
+}
+.rt-section-hero .background .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.rt-section-hero .h1-header .h1-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.291667px;
+  color: #fff;
+}
+.rt-section-hero .h1-header .h1-description {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+}
+
+.rt-section-hero .form-container {
+  margin-top: 64px;
+}
+.rt-section-hero .form-container .h2-title {
+  padding: 18px 17.6%;
+  background-color: #6055a5;
+  color: white;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.267857px;
+}
+.rt-section-hero .form-container .h2-title strong {
+  font-weight: 700;
+}
+.rt-section-hero .form-container .form {
+  margin-top: 24px;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.rt-section-hero .form-container .form .input-item {
+  position: relative;
+}
+.rt-section-hero .form-container .form .input {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding-inline: 19px;
+}
+.rt-section-hero .form-container .form .label {
+  position: absolute;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  left: -100vw;
+  padding-left: 19px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: #3e3c49;
+  width: 100%;
+}
+.rt-section-hero .form-container .form .icon-error {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.rt-section-hero .form-container .form .error-message {
+  margin-top: 6px;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: right;
+  color: #ff7979;
+}
+.rt-section-hero .form-container .form .input:placeholder-shown + .label {
+  left: 0px;
+}
+.rt-section-hero .form-container .form .submit {
+  width: 100%;
+  height: 56px;
+  background: #38cc8c;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.rt-section-hero .form-container .form .terms {
+  margin-top: -8px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+  color: #b9b6d3;
+  width: 89.247311828%;
+}
+.rt-section-hero .form-container .form .terms a {
+  font-weight: 700;
+  color: #ff7a7a;
 }
 
 .rt-footer .attribution {
@@ -21,4 +165,4 @@
   color: #3e52a3;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22index.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA+BA;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIA;EACE;EACA;;AAEF;EACE%22,%22file%22:%22index.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22index.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAgCA;AAAA;AAAA;EAGE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA,kBAvCE;;AA0CJ;EACE;EACA;EACA;;AAEA;EAnDF,OAoDkB;EAnDlB,QAmDwB;EACpB;EACA;;AAKF;EACE;EACA;EACA;EACA;EACA;EACA,OAxDE;;AA2DJ;EACE;EACA;EACA;EACA;EACA;EACA,OAjEE;;;AAsER;EACE;;AAEA;EACE;EACA,kBA9EG;EA+EH;EACA;EACA;EAEA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAIJ;EACE;EACA;EACA,kBA9FI;EA+FJ;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EAlHF,OAmHkB;EAlHlB,QAkHwB;EACpB;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OA9HM;EA+HN;;AAGF;EACE;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGF;EACE;;AAGF;EA9JF,OA+JkB;EA9JlB,QA8JwB;EACpB,YA3JE;EA4JF;EACA;EACA;EACA;EACA;EACA;EACA,OA9JE;EA+JF;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA,OA1KS;EA2KT;;AAEA;EACE;EACA,OAnLF;;;AA0LJ;EACE;EACA;;AAEF;EACE%22,%22file%22:%22index.css%22%7D */
