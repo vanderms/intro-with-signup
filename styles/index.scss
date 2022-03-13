@@ -55,6 +55,10 @@ html {
   flex-direction: column;
   padding: 88px math.percentage(24 / 375) 68px;
 
+  @include media(tablet){
+    padding-inline: Max(math.percentage(24 / 375), 50vw - 350px);    
+  }
+
   &::before {
     content: '';
     position: absolute;
